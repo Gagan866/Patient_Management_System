@@ -4,6 +4,14 @@ A full-stack web application for managing patients, doctors, and appointments in
 
 Built with Spring Boot, React (Vite), and PostgreSQL.
 
+## Key Highlights
+
+- Secure JWT-based authentication using Spring Security
+- RESTful API design with proper HTTP status handling
+- Conflict prevention logic for appointment booking
+- Clean component-based frontend architecture in React
+- Fully responsive UI for desktop and mobile
+
 ## Features
 
 - Admin login with JWT authentication
@@ -11,6 +19,19 @@ Built with Spring Boot, React (Vite), and PostgreSQL.
 - Doctor management (Create, Read, Update, Delete)
 - Appointment booking with conflict prevention (prevents double-booking the same doctor slot)
 - Dashboard overview for patients and appointments
+
+## Demo Credentials
+
+Use the following credentials to log in:
+
+- Username: `admin`
+- Password: `admin123`
+
+## Important Notes
+
+- Doctors must be added before booking appointments
+- Appointment booking prevents double-booking for the same doctor at the same time slot
+- All protected routes require JWT authentication
 
 ## Tech Stack
 
@@ -119,4 +140,4 @@ To be added after deployment.
 
 ## License
 
-This project is for educational and learning purposes.
+This project was developed as part of a full-stack engineering assessment to demonstrate practical implementation skills.
