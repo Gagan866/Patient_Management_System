@@ -89,19 +89,19 @@ npm run dev
 ## Screenshots
 
 ### Login Page
-![Login Page](screenshots/login.png)
+<img src="screenshots/login.png" width="100%"/>
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+<img src="screenshots/dashboard.png" width="100%"/>
 
 ### Patients Management
-![Patients](screenshots/patients.png)
+<img src="screenshots/patients.png" width="100%"/>
 
 ### Doctors Management
-![Doctors](screenshots/doctors.png)
+<img src="screenshots/doctors.png" width="100%"/>
 
 ### Appointments Management
-![Appointments](screenshots/appointments.png)
+<img src="screenshots/appointments.png" width="100%"/>
 
 ## Highlights / Notes
 
