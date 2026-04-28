@@ -89,19 +89,19 @@ npm run dev
 ## Screenshots
 
 ### Login Page
-![Login Page](hospital-frontend/public/screenshots/login.png)
+![Login Page](screenshots/login.png)
 
 ### Dashboard
-![Dashboard](hospital-frontend/public/screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.png)
 
 ### Patients Management
-![Patients](hospital-frontend/public/screenshots/patients.png)
+![Patients](screenshots/patients.png)
 
 ### Doctors Management
-![Doctors](hospital-frontend/public/screenshots/doctors.png)
+![Doctors](screenshots/doctors.png)
 
 ### Appointments Management
-![Appointments](hospital-frontend/public/screenshots/appointments.png)
+![Appointments](screenshots/appointments.png)
 
 ## Highlights / Notes
 
