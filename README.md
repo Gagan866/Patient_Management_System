@@ -1,37 +1,16 @@
 # Hospital Management System
 
-A full-stack web application for managing patients, doctors, and appointments in a hospital workflow.
+Hospital Management System is a full-stack web application built as part of a Full Stack Developer technical assessment. It provides secure admin access and a clean interface for managing patients, doctors, and appointments with conflict-safe booking logic.
 
-Built with Spring Boot, React (Vite), and PostgreSQL.
+## Key Features
 
-## Key Highlights
-
-- Secure JWT-based authentication using Spring Security
-- RESTful API design with proper HTTP status handling
-- Conflict prevention logic for appointment booking
-- Clean component-based frontend architecture in React
-- Fully responsive UI for desktop and mobile
-
-## Features
-
-- Admin login with JWT authentication
-- Patient management (Create, Read, Update, Delete)
-- Doctor management (Create, Read, Update, Delete)
-- Appointment booking with conflict prevention (prevents double-booking the same doctor slot)
-- Dashboard overview for patients and appointments
-
-## Demo Credentials
-
-Use the following credentials to log in:
-
-- Username: `admin`
-- Password: `admin123`
-
-## Important Notes
-
-- Doctors must be added before booking appointments
-- Appointment booking prevents double-booking for the same doctor at the same time slot
-- All protected routes require JWT authentication
+- Admin login with JWT-based authentication
+- Patient management with create, read, update, and delete operations
+- Doctor management with create, read, update, and delete operations
+- Appointment booking with date and time support
+- Conflict prevention to avoid double booking for the same doctor and time slot
+- Dashboard view for patients and appointments
+- Responsive UI with a clear, production-ready layout
 
 ## Tech Stack
 
@@ -44,100 +23,88 @@ Use the following credentials to log in:
 ### Backend
 
 - Spring Boot
-- Spring Security (JWT)
+- Spring Security with JWT
 - Spring Data JPA
 
 ### Database
 
-- PostgreSQL
+- PostgreSQL on Render
 
 ## Project Structure
 
 ```text
 Patient_Management_System/
-├── hospital-management/   # Spring Boot backend
-└── hospital-frontend/     # React frontend
+├── hospital-management/
+└── hospital-frontend/
 ```
+
+## Live Demo
+
+Frontend: https://patient-management-system-pearl.vercel.app
+
+Backend: https://patient-management-system-1cc1.onrender.com
+
+## Demo Credentials
+
+- Username: admin
+- Password: admin123
 
 ## Setup Instructions
 
-### Prerequisites
+### Backend Setup
 
-- Java 21+
-- Maven
-- Node.js 18+
-- PostgreSQL
-
-### 1. Backend Setup
-
-From the backend directory:
+1. Open the `hospital-management` folder.
+2. Configure your PostgreSQL connection in `src/main/resources/application.properties`.
+3. Update any required JWT or database properties for your local environment.
+4. Run the backend:
 
 ```bash
 cd hospital-management
 mvn spring-boot:run
 ```
 
-Notes:
+### Frontend Setup
 
-- Configure PostgreSQL connection in `hospital-management/src/main/resources/application.properties`
-- Default backend port: `8080`
-
-### 2. Frontend Setup
-
-From the frontend directory:
+1. Open the `hospital-frontend` folder.
+2. Install dependencies:
 
 ```bash
 cd hospital-frontend
 npm install
+```
+
+3. Start the development server:
+
+```bash
 npm run dev
 ```
 
-Notes:
+## API Endpoints Overview
 
-- Default frontend dev port: `5173`
-- Frontend expects backend API at `http://localhost:8080`
-
-## API Endpoints (Brief)
-
-### Auth
-
-- `POST /auth/login` - login and receive JWT
-
-### Patients
-
-- `GET /patients`
-- `POST /patients`
-- `PUT /patients/{id}`
-- `DELETE /patients/{id}`
-
-### Doctors
-
-- `GET /doctors`
-- `POST /doctors`
-- `PUT /doctors/{id}`
-- `DELETE /doctors/{id}`
-
-### Appointments
-
-- `GET /appointments`
-- `POST /appointments`
-- `PUT /appointments/{id}`
-- `DELETE /appointments/{id}`
+- `POST /auth/login`
+- `GET /patients`, `POST /patients`, `PUT /patients/{id}`, `DELETE /patients/{id}`
+- `GET /doctors`, `POST /doctors`, `PUT /doctors/{id}`, `DELETE /doctors/{id}`
+- `GET /appointments`, `POST /appointments`, `PUT /appointments/{id}`, `DELETE /appointments/{id}`
 
 ## Screenshots
 
-Add project screenshots here after capturing UI views.
+Add screenshot here: Login Page
 
-- Login Page: _Screenshot coming soon_
-- Dashboard: _Screenshot coming soon_
-- Patients Management: _Screenshot coming soon_
-- Doctors Management: _Screenshot coming soon_
-- Appointments Management: _Screenshot coming soon_
+Add screenshot here: Dashboard
 
-## Live URL
+Add screenshot here: Patients Management
 
-To be added after deployment.
+Add screenshot here: Doctors Management
 
-## License
+Add screenshot here: Appointments Management
 
-This project was developed as part of a full-stack engineering assessment to demonstrate practical implementation skills.
+## Highlights / Notes
+
+- JWT-based authentication for protected routes
+- Appointment conflict prevention to avoid double booking
+- Full-stack deployment with Render and Vercel
+- Responsive UI for a clean user experience
+
+## Conclusion
+
+This project was built as part of a technical assessment to demonstrate full-stack development skills across frontend, backend, authentication, API design, and deployment.
