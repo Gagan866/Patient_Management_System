@@ -88,15 +88,20 @@ npm run dev
 
 ## Screenshots
 
-Add screenshot here: Login Page
+### Login Page
+![Login Page](hospital-frontend/public/screenshots/login.png)
 
-Add screenshot here: Dashboard
+### Dashboard
+![Dashboard](hospital-frontend/public/screenshots/dashboard.png)
 
-Add screenshot here: Patients Management
+### Patients Management
+![Patients](hospital-frontend/public/screenshots/patients.png)
 
-Add screenshot here: Doctors Management
+### Doctors Management
+![Doctors](hospital-frontend/public/screenshots/doctors.png)
 
-Add screenshot here: Appointments Management
+### Appointments Management
+![Appointments](hospital-frontend/public/screenshots/appointments.png)
 
 ## Highlights / Notes
 
